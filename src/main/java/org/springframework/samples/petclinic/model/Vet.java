@@ -41,6 +41,10 @@ public class Vet extends Person {
     private Set<Specialty> specialties;
 
     @JsonIgnore
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "vet", fetch = FetchType.EAGER)
+    private Set<Visit> visit;
+
+    @JsonIgnore
     protected Set<Specialty> getSpecialtiesInternal() {
         if (this.specialties == null) {
             this.specialties = new HashSet<>();
