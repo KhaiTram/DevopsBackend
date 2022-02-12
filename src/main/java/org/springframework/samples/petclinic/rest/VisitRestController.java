@@ -64,8 +64,8 @@ public class VisitRestController {
         return new ResponseEntity<Collection<VisitDto>>(visitMapper.toVisitsDto(visits), HttpStatus.OK);
     }
 
-   /*  @PreAuthorize("hasRole(@roles.VET_ADMIN)")
-    @RequestMapping(value = "/visit/{vetId}", method = RequestMethod.GET, produces = "application/json")
+    @PreAuthorize("hasRole(@roles.VET_ADMIN)")
+    @RequestMapping(value = "/vet/{vetId}", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<Collection<VisitDto>> getVisitByVetId(@PathVariable("vetId") int vetId) {
         Collection<VisitDto> visits = new ArrayList<VisitDto>();
         visits.addAll(visitMapper.toVisitsDto(this.clinicService.findVisitsByVetId(vetId)));
@@ -73,7 +73,7 @@ public class VisitRestController {
             return new ResponseEntity<Collection<VisitDto>>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<Collection<VisitDto>>(visits, HttpStatus.OK);
-    } */
+    }
 
     @PreAuthorize("hasRole(@roles.OWNER_ADMIN)")
     @RequestMapping(value = "/{visitId}", method = RequestMethod.GET, produces = "application/json")
