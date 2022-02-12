@@ -44,7 +44,7 @@ public interface VisitRepository {
 
     List<Visit> findByPetId(Integer petId);
     
-    List<Visit> findByVetId(Integer VetId);
+    List<Visit> findByVetId(Integer VetId) throws DataAccessException;
     
 	Visit findById(int id) throws DataAccessException;
 	
