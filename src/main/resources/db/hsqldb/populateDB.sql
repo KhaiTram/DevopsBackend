@@ -23,9 +23,9 @@ INSERT INTO types VALUES (5, 'bird');
 INSERT INTO types VALUES (6, 'hamster');
 
 INSERT INTO owners VALUES (1, 'Pablos', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023');
-INSERT INTO owners VALUES (2, 'Betty', 'Davis', '638 Cardinal Ave.', 'Sun Prairie', '6085551749');
-INSERT INTO owners VALUES (3, 'Eduardo', 'Rodriquez', '2693 Commerce St.', 'McFarland', '6085558763');
-INSERT INTO owners VALUES (4, 'Harold', 'Davis', '563 Friendly St.', 'Windsor', '6085553198');
+INSERT INTO owners VALUES (2, 'Ahmad', 'Cugurlu', '638 Cardinal Ave.', 'Sun Prairie', '6085551749');
+INSERT INTO owners VALUES (3, 'Quangju', 'Lee', '2693 Commerce St.', 'McFarland', '6085558763');
+INSERT INTO owners VALUES (4, 'Bongo', 'Kanaba', '563 Friendly St.', 'Windsor', '6085553198');
 INSERT INTO owners VALUES (5, 'Peter', 'McTavish', '2387 S. Fair Way', 'Madison', '6085552765');
 INSERT INTO owners VALUES (6, 'Jean', 'Coleman', '105 N. Lake St.', 'Monona', '6085552654');
 INSERT INTO owners VALUES (7, 'Jeff', 'Black', '1450 Oak Blvd.', 'Monona', '6085555387');
@@ -49,8 +49,26 @@ INSERT INTO pets VALUES (13, 'Sly', '2012-06-08', 1, 10);
 
 INSERT INTO visits VALUES (1, 7, 1,'2013-01-01', 'rabies shot');
 INSERT INTO visits VALUES (2, 8, 1,'2013-01-02', 'rabies shot');
-INSERT INTO visits VALUES (3, 8, 2,'2013-01-03', 'neutered');
-INSERT INTO visits VALUES (4, 7, 3,'2013-01-04', 'spayed');
+INSERT INTO visits VALUES (3, 8, 1,'2013-01-03', 'neutered');
+INSERT INTO visits VALUES (4, 7, 1,'2013-01-04', 'spayed');
+INSERT INTO visits VALUES (5, 7, 2,'2013-01-04', 'amputation');
+INSERT INTO visits VALUES (6, 7, 2,'2013-01-04', 'asisted dying');
+INSERT INTO visits VALUES (7, 7, 2,'2013-01-04', 'asisted dying');
+INSERT INTO visits VALUES (8, 7, 2,'2013-01-04', 'feeding');
+INSERT INTO visits VALUES (9, 7, 2,'2013-01-04', 'shaving');
+INSERT INTO visits VALUES (10, 7, 3,'2013-01-04', 'soup evaluation');
+INSERT INTO visits VALUES (11, 7, 3,'2013-01-04', 'chinese cuisine');
+INSERT INTO visits VALUES (12, 7, 3,'2013-01-04', 'Hot dog manufacturing');
+INSERT INTO visits VALUES (13, 7, 3,'2013-01-04', 'taste test');
+INSERT INTO visits VALUES (14, 7, 4,'2013-01-04', 'shot');
+INSERT INTO visits VALUES (15, 7, 4,'2013-01-04', 'shot');
+INSERT INTO visits VALUES (16, 7, 4,'2013-01-04', 'spayed');
+INSERT INTO visits VALUES (17, 7, 4,'2013-01-04', 'spayed');
+INSERT INTO visits VALUES (18, 7, 5,'2013-01-04', 'spayed');
+INSERT INTO visits VALUES (19, 7, 5,'2013-01-04', 'massage');
+INSERT INTO visits VALUES (20, 7, 5,'2013-01-04', 'nail clipping');
+INSERT INTO visits VALUES (21, 7, 5,'2013-01-04', 'feeding');
+
 
 INSERT INTO users(username,password,enabled) VALUES ('admin','{noop}admin', true);
 
