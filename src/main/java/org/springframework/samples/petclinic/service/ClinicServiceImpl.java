@@ -290,8 +290,5 @@ public class ClinicServiceImpl implements ClinicService {
 	public Collection<Visit> findVisitsByVetId(int vetId) {
 		return visitRepository.findByVetId(vetId);
 	}
-	
-	
-
 
 }
